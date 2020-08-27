@@ -1,4 +1,4 @@
-# AL-NER-DEMO
+# AL-NER
 
 In this project, we use pre-trained word2vec to implement word embedding, choose BiLstm as encoder and CRF as decoderand.To evaluate the active learning strategies, we also implement several sample selection strategies based on uncertainty.
 
