@@ -1,0 +1,7 @@
+[PAD]
+B-time
+I-time
+O
+X
+[CLS]
+[SEP]
