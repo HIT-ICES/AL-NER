@@ -83,24 +83,6 @@ class LeastTokenProbabilityStrategy(ActiveLearningStrategy):
         return idx
 
 
-class MNLPStrategy(ActiveLearningStrategy):
-    @classmethod
-    def select_idx(cls, choices_number: int, probs: np.ndarray = None, scores: np.ndarray = None,
-                   best_path: List[List[int]] = None, **kwargs) -> np.ndarray:
-        """
-        MNLP
-        """
-        assert probs.shape[0] == scores.shape[0] == len(best_path)
-        mnlp_scores = []
-        for prob, path in zip(probs, best_path):
-            prob = prob[:len(path)]
-            prob -= np.max(prob)
-            prob_softmax = np.exp(prob) / np.sum(np.exp(prob))
-            prob_softmax = np.take(prob_softmax, path)
-            mnlp_scores.append(np.mean(np.log(prob_softmax)))
-        idx = np.argpartition(np.array(mnlp_scores), choices_number)[:choices_number]
-        return idx
-
 class MinimumTokenProbabilityStrategy(ActiveLearningStrategy):
     @classmethod
     def select_idx(cls, choices_number: int, probs: np.ndarray = None, scores: np.ndarray = None,
