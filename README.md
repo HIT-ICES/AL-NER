@@ -139,7 +139,7 @@ hidden_dim=200
 num_rnn_layers=1
 num_epoch=25
 learning_rate=1e-3
-model_path_prefix=../model/word2vec_bilstm_crf_ltp
+model_path_prefix=../model/word2vec_bilstm_crf_ltp # please make sure that ../model exists
 
 [ENTITYLEVELF1]
 average=micro
@@ -153,7 +153,7 @@ query_batch_fraction=0.02
 ```
 
 According to the above configuration file, log file will be saved under the directory below.
-`al_ner_demo/logger/AL-NER-DEMO/BosonNLP_NER_6C/WORD2VEC_BiLSTMCRF_LTP/`
+`AL-NER/logger/BosonNLP_NER_6C/WORD2VEC_BiLSTMCRF_LTP/`
 
 2. Type the command line and try to run it
 
