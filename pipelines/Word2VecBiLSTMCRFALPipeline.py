@@ -36,7 +36,6 @@ class Word2VecBiLSTMCRFALPipeline(Pipeline):
             "LC": LeastConfidenceStrategy,
             "NLC": NormalizedLeastConfidenceStrategy,
             "LTP": LeastTokenProbabilityStrategy,
-            "MNLP": MNLPStrategy,
             "MTP": MinimumTokenProbabilityStrategy,
             "MTE": MaximumTokenEntropyStrategy,
             "LONG": LongStrategy,

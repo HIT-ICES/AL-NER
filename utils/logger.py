@@ -25,7 +25,7 @@ class Logger(object):
             al_strategy = config.param("ActiveStrategy", "strategy", required=False)
 
             method = '_'.join(list(filter(None, [word_embedding, model_train, al_strategy])))
-            logfile_dir = os.path.join(logdir_prefix, "AL-NER-DEMO", corpus_name, method)
+            logfile_dir = os.path.join(logdir_prefix, corpus_name, method)
         
         if not os.path.isdir(logfile_dir):
             os.makedirs(logfile_dir)

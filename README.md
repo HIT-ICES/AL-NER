@@ -1,6 +1,6 @@
 # AL-NER
 
-In this project, we use pre-trained word2vec to implement word embedding, choose BiLstm as encoder and CRF as decoderand.To evaluate the active learning strategies, we also implement several sample selection strategies based on uncertainty.
+In this project, we use pre-trained word2vec to implement word embedding, choose BiLstm as encoder and CRF as decoder.To evaluate the active learning strategies, we also implement several sample selection strategies based on uncertainty.
 
 ## Reference
 
@@ -82,7 +82,7 @@ datasets
 
 | Name                                                         | Description                                                  | Language |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
-| [People’s Daily](https://github.com/OYE93/Chinese-NLP-Corpus/tree/master/NER/People's Daily) | a collection of newswire article annotated with 3 balanced entity types | Chinese  |
+| [People’s Daily](https://github.com/OYE93/Chinese-NLP-Corpus/tree/master/NER/People's%20Daily) | a collection of newswire article annotated with 3 balanced entity types | Chinese  |
 | [Boson_NER](https://bosonnlp.com/resources/BosonNLP_NER_6C.zip) | a set of online news annotations published by bosonNLP, which contains 6 entity types | Chinese  |
 | [Weibo_NER](https://github.com/OYE93/Chinese-NLP-Corpus/tree/master/NER/Weibo) | a collection of short blogs posted on Chinese social media Weibo with 8 extremely unbalanced entity types | Chinese  |
 | [OntoNotes-5.0](https://catalog.ldc.upenn.edu/LDC2013T19)    | a collection of broadcast news articles, which contains 18 entity types | Chinese  |
@@ -139,7 +139,7 @@ hidden_dim=200
 num_rnn_layers=1
 num_epoch=25
 learning_rate=1e-3
-model_path_prefix=../model/word2vec_bilstm_crf_ltp
+model_path_prefix=../model/word2vec_bilstm_crf_ltp # please make sure that ../model exists
 
 [ENTITYLEVELF1]
 average=micro
@@ -153,7 +153,7 @@ query_batch_fraction=0.02
 ```
 
 According to the above configuration file, log file will be saved under the directory below.
-`al_ner_demo/logger/AL-NER-DEMO/BosonNLP_NER_6C/WORD2VEC_BiLSTMCRF_LTP/`
+`AL-NER/logger/BosonNLP_NER_6C/WORD2VEC_BiLSTMCRF_LTP/`
 
 2. Type the command line and try to run it
 
