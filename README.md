@@ -17,9 +17,7 @@ Please cite the paper, if this project/paper contribute to your research.
 }
 ```
 
-You can find the latest version of this paper: https://www.researchgate.net/publication/338476927_LTP_A_New_Active_Learning_Strategy_for_CRF-Based_Named_Entity_Recognition
 
-**Note:** Arxiv status still on hold..
 
 ## Word Embedding
 
