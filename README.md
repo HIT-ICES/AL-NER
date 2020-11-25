@@ -2,20 +2,6 @@
 
 In this project, we use pre-trained word2vec to implement word embedding, choose BiLstm as encoder and CRF as decoder.To evaluate the active learning strategies, we also implement several sample selection strategies based on uncertainty.
 
-## Reference
-
-Please cite the paper, if this project/paper contribute to your research.
-
-```
-@misc{liu2020ltp,
-    title={LTP: A New Active Learning Strategy for CRF-Based Named Entity Recognition},
-    author={Mingyi Liu and Zhiying Tu Tong Zhang and Tonghua Su and Zhongjie Wang},
-    year={2020},
-    eprint={2001.02524},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
-}
-```
 
 
 
